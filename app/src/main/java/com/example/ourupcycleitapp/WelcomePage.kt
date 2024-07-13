@@ -19,7 +19,7 @@ class WelcomePage : AppCompatActivity() {
             finish()
         }
         binding.rvButton.setOnClickListener {
-            var intent = Intent(this,MainActivity::class.java)
+            var intent = Intent(this,Video::class.java)
             startActivity(intent)
         }
 
