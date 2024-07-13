@@ -6,20 +6,24 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.ourupcycleitapp.databinding.ActivityMainBinding
+import com.example.ourupcycleitapp.databinding.ActivityWelcomePageBinding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-
+class WelcomePage : AppCompatActivity() {
+    lateinit var binding: ActivityWelcomePageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityWelcomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnNext.setOnClickListener {
-            val intent = Intent(this, WelcomePage::class.java)
+        binding.Home.setOnClickListener {
+            finish()
+        }
+        binding.rvButton.setOnClickListener {
+            var intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+
+
 
     }
 }
