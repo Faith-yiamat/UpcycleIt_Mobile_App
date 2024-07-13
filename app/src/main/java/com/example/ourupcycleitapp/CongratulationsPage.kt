@@ -6,23 +6,22 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.ourupcycleitapp.databinding.ActivityLevelOneBinding
+import com.example.ourupcycleitapp.databinding.ActivityCongratulationsPageBinding
 
-class LevelOne : AppCompatActivity() {
-    lateinit var binding: ActivityLevelOneBinding
+class CongratulationsPage : AppCompatActivity() {
+    lateinit var binding: ActivityCongratulationsPageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLevelOneBinding.inflate(layoutInflater)
+        binding = ActivityCongratulationsPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvHome.setOnClickListener {
+        binding.tvSave.setOnClickListener {
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-        binding.tvContinue.setOnClickListener {
-            var intent = Intent(this, CongratulationsPage::class.java)
+        binding.tvHom.setOnClickListener {
+            var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
