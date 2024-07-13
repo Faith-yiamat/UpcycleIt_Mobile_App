@@ -16,7 +16,7 @@ class CongratulationsPage : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvSave.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
+            var intent = Intent(this, SignUP::class.java)
             startActivity(intent)
         }
         binding.tvHom.setOnClickListener {
