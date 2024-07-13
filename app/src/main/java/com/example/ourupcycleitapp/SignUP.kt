@@ -21,7 +21,7 @@ class SignUP : AppCompatActivity() {
 //        }
 //
         binding.tvLogin.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
+            var intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
         binding.signUpButton.setOnClickListener {
