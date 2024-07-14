@@ -15,11 +15,7 @@ class SignUP : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.signUpButton.setOnClickListener {
-//            var intent = Intent(this, CongratulationsPage::class.java)
-//            startActivity(intent)
-//        }
-//
+
         binding.tvLogin.setOnClickListener {
             var intent = Intent(this, Login::class.java)
             startActivity(intent)
@@ -81,7 +77,7 @@ class SignUP : AppCompatActivity() {
         confirmPassword: String
     ) {
 
-        val intent = Intent(this, CongratulationsPage::class.java)
+        val intent = Intent(this,successfullysaved::class.java)
         startActivity(intent)
     }
 }

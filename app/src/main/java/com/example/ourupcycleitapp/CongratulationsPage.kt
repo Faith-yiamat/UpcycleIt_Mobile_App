@@ -19,7 +19,7 @@ class CongratulationsPage : AppCompatActivity() {
             var intent = Intent(this, SignUP::class.java)
             startActivity(intent)
         }
-        binding.tvHom.setOnClickListener {
+        binding.tvHomed.setOnClickListener {
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

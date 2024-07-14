@@ -5,8 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CongratulationsPage"
+    tools:context=".Congratule"
     android:background="@android:color/system_accent1_200"
+
+
     >
 
     <TextView
@@ -59,9 +61,9 @@
         android:id="@+id/tvSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="19dp"
-        android:text="Save"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="20dp"
+        android:text="Save Video"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
@@ -75,4 +77,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSave"
         app:srcCompat="@drawable/home" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

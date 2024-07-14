@@ -18,15 +18,19 @@ class Video : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
+
+
+
         binding.tvHomes.setOnClickListener {
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         binding.tvContinued.setOnClickListener {
-            var intent = Intent(this, LevelOne::class.java)
+            var intent = Intent(this, Levels::class.java)
             startActivity(intent)
         }
 
     }
-  }
+}

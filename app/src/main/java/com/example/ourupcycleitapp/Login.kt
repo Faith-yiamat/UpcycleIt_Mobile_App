@@ -62,7 +62,7 @@ class Login : AppCompatActivity() {
         password: String
     ) {
 
-        val intent = Intent(this, CongratulationsPage::class.java)
+        val intent = Intent(this,successfullysaved::class.java)
         startActivity(intent)
     }
 }

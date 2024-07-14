@@ -6,24 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Video">
+
+
     <ImageView
         android:id="@+id/tvHomes"
         android:layout_width="42dp"
         android:layout_height="44dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="584dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContinued"
         app:srcCompat="@drawable/home" />
 
     <Button
         android:id="@+id/tvContinued"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="172dp"
         android:text="Continue"
-        app:layout_constraintStart_toEndOf="@+id/tvHomes"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
@@ -35,6 +37,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/play" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

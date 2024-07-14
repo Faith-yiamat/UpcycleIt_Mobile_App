@@ -6,13 +6,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.ourupcycleitapp.databinding.ActivityLevelOneBinding
+import com.example.ourupcycleitapp.databinding.ActivityLevelTwoBinding
 
-class LevelOne : AppCompatActivity() {
-    lateinit var binding: ActivityLevelOneBinding
+class LevelTwo : AppCompatActivity() {
+    lateinit var binding: ActivityLevelTwoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLevelOneBinding.inflate(layoutInflater)
+        binding = ActivityLevelTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.imHome.setOnClickListener {
@@ -20,7 +20,7 @@ class LevelOne : AppCompatActivity() {
             startActivity(intent)
         }
         binding.tVContinue.setOnClickListener {
-            var intent = Intent(this, CongratulationsPage::class.java)
+            var intent = Intent(this, Congratule::class.java)
             startActivity(intent)
         }
 
